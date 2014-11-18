@@ -1,0 +1,155 @@
+<html >
+	<head>
+<title><?=Funcao::tituloSite() ?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="www.iflexdigital.com.br" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+   
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc2.min.css" />
+	
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image.png">
+   
+  
+	<script src="js/jquery.mobile-1.0rc2.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/script.js"></script>		
+	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/o-script.js"></script>
+    
+    <script type='text/javascript' src='js/slider/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/slider/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/slider/camera.min.js'></script> 
+    
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+
+<script type="text/javascript">
+      jQuery(function(){
+        
+        jQuery('#camera_wrap_4').camera({
+          height: 'auto',
+          loader: 'bar',
+          pagination: false,
+          thumbnails: false,
+          hover: false,
+          opacityOnGrid: false
+        });
+
+      });
+</script>
+    <script type="text/javascript">
+        function slide(){
+          jQuery(function(){    
+            $("#trafego").jCarouselLite({
+            btnNext: ".seta2",
+            btnPrev: ".seta1",
+            visible: 10,
+            auto: 2000,
+            speed: 1000
+            })
+          });
+          $('#pareiro-home').show();
+          }
+    </script>
+	
+	</head>
+	
+				<div id="home principal" data-role="page">
+				<!-- MENU -->
+					<div id="header">
+						<div class="header-content">
+							<a class="menu-btn" href="#menu"></a>
+							<a href="javascript:history.back();" class="p-link-back"><i class="fa fa-arrow-left"></i></a>
+						</div>
+					</div>
+						<nav id="menu">
+							<ul style="background-color: #131e2d;">
+								<li class="Selected">
+									<a href="#inicio" type="button" id="link" onclick="chamarInicio();">
+										<i class="fa fa-home link_inicio"></i>INICIO
+									</a>
+								</li>
+								<li>
+									<a href="#"  type="button" id="link" onclick="chamarTv();">
+										<i class="fa fa-users link_tv"></i>TV NAFESTA.COM - AO VIVO
+									</a>
+								</li>
+								<li>
+									<a href="#radio" type="button" id="link" onclick="chamarRadio();">
+										<i class="fa fa-users link_radio"></i>RADIO NAFESTA.COM - AO VIVO
+									</a>
+								</li>
+								<li>
+									<a href="#coluna" type="button" id="link" onclick="chamarColuna();">
+										<i class="fa fa-users link_coluna"></i>COLUNA SOCIAL DIGITAL
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/user/tvnafesta/videos">
+										<i class="fa fa-users"></i>CANAL YOUTUBE – TV NAFESTA.COM
+									</a>
+								</li>
+							</ul>
+						</nav>
+				<!-- CONTENT -->
+				
+					<!-- HOME -->
+					<body id="home inicio">
+						<div id="content">
+							<div class="home-content">
+								<span id="Logo" class="svg">
+									<img src="img/logo.png" />
+								</span>
+							</div>
+								<div class="camera_wrap camera_black_skin camera_emboss pattern_1" id="camera_wrap_4">
+									<div data-thumb="img/gallery/1-th.jpg" data-src="img/gallery/1.jpg">
+										<div class="bannerContent fadeFromBottom">
+											<div class="b-c-textpane">
+											<a href="https://www.facebook.com/pages/NaFestacom/1513133925607747?fref=ts" class="home-scl-icon facebook">
+												<i class="fa fa-facebook"></i>
+												<div>Curti  no Facebook</div>
+											</a>
+											<a href="https://www.youtube.com/user/tvnafesta" class="home-scl-icon gplus">
+												<i class="fa fa-youtube"></i>
+												<div>Inscreva-se em Nosso Canal</div>
+											</a>
+											</div>
+										</div>
+									</div>
+									<div data-thumb="img/gallery/2-th.jpg"  data-src="img/gallery/2.jpg">
+										<div class="bannerContent fadeFromBottom">
+											<div class="b-c-textpane">
+												<a href="https://twitter.com/tioadao" class="home-scl-icon twitter">
+													<i class="fa fa-twitter"></i>
+													<div>Siga no Twitter</div>
+												</a>
+												<a href="http://instagram.com/adaojosegomes" class="home-scl-icon linkedin">
+													<i class="fa fa-instagram"></i>
+													<div>Siga no  instagram</div>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+								<div data-thumb="img/gallery/3-th.jpg"  data-src="img/gallery/3.jpg">
+							
+								</div>
+								</div>
+						</div>
+					</body>
+							
+				</div>
+				
+				<? include_once ("menu.php");?>
+	
+	

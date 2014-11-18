@@ -1,0 +1,8 @@
+RewriteEngine On
+
+IndexIgnore *
+
+AddType application/x-httpd-php .js
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
