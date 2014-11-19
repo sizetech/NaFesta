@@ -1,0 +1,96 @@
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="www.iflexdigital.com.br" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+   
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc2.min.css" />
+	
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image.png">
+   
+  
+	<script src="js/jquery.mobile-1.0rc2.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/script.js"></script>		
+	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/o-script.js"></script>
+    
+    <script type='text/javascript' src='js/slider/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/slider/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/slider/camera.min.js'></script> 
+    
+    <script type="text/javascript" src="js/jcarousel.js"></script> 
+<script>
+$(function(){
+	
+	
+	$.ajax({
+	url: 'http://nafesta.com/app/radio.php',
+       success: function(data) {
+       	   $('#conteudo').html(data);
+		 }
+		  });
+	
+	})
+</script>	
+   <body class="o-page p-about" onload="slide()">
+    <div id="header">
+						<div class="header-content">
+							<a class="menu-btn" href="#menu"></a>
+							<a href="javascript:history.back();" class="p-link-back"><i class="fa fa-arrow-left"></i></a>
+						</div>
+					</div>
+						<nav id="menu">
+							<ul style="background-color: #131e2d;">
+								<li class="Selected">
+									<a href="#inicio" type="button" id="link" onclick="chamarInicio();">
+										<i class="fa fa-home link_inicio"></i>INICIO
+									</a>
+								</li>
+								<li>
+									<a href="tvnafesta.html"  type="button" id="link" onclick="chamarTv();">
+										<i class="fa fa-users link_tv"></i>TV NAFESTA.COM - AO VIVO
+									</a>
+								</li>
+								<li>
+									<a href="radio.html" type="button" id="link" onclick="chamarRadio();">
+										<i class="fa fa-users link_radio"></i>RADIO NAFESTA.COM - AO VIVO
+									</a>
+								</li>
+								<li>
+									<a href="coluna.html" type="button" id="link" onclick="chamarColuna();">
+										<i class="fa fa-users link_coluna"></i>COLUNA SOCIAL DIGITAL
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/user/tvnafesta/videos" target="_blank">
+										<i class="fa fa-users"></i>CANAL YOUTUBE – TV NAFESTA.COM
+									</a>
+								</li>
+							</ul>
+						</nav>
+            
+            <div id="content">
+                
+                <div class="o-team">
+                   
+                    
+						<div id="conteudo"></div>
+                 
+            
+            <div class="subFooter">Copyright 2014. Todos os direitos reservados.</div>
+			 </div>
+        <? include_once ("menu.php");?>
+       
+		</div>
+    </body>
