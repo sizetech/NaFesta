@@ -1,4 +1,4 @@
-
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="www.iflexdigital.com.br" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -14,8 +14,7 @@
 	
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image.png">
-   
-  
+	
 	<script src="js/jquery.mobile-1.0rc2.min.js"></script>
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/jquery.form.js"></script>
@@ -30,6 +29,7 @@
     <script type='text/javascript' src='js/slider/camera.min.js'></script> 
     
     <script type="text/javascript" src="js/jcarousel.js"></script> 
+	
  <script>
 	$(function(){
 	
@@ -46,6 +46,22 @@
    
    </script>
 
+   <script type="text/javascript">
+        function slide(){
+          jQuery(function(){    
+            $("#trafego").jCarouselLite({
+            btnNext: ".seta2",
+            btnPrev: ".seta1",
+            visible: 10,
+            auto: 2000,
+            speed: 1000
+            })
+          });
+          $('#pareiro-home').show();
+          }
+    </script>
+	
+   </head>
    <body class="o-page p-about" onload="slide()">
 		<div id="header">
 						<div class="header-content">
